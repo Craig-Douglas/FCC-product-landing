@@ -1,188 +1,365 @@
+
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    overflow-x: hidden;
-
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Arvo', serif;
+  background-color: #ffffff;
 }
 
 
+span {
+font-family: 'Lato', sans-serif;;
+z-index: 4;
+}
 
-header {
-    position: fixed;
-    overflow-x: hidden;
-    width: 100%;
-    background-color: #f0d040;
-    color: white;
-    display: flex;
-    flex-direction: row;
+
+/********** LINKS ***********/
+
+  #trail_two {
+      display: flex;
+      padding-top: 50px;
+      justify-content: center;
+      background-color: #94190e;
+      z-index: 6;
   }
 
-  .container {
-    background-color: rgba(47, 79, 79, 0);
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    padding-top:0px;
-    color: #000000;
-    flex-basis: auto;
-    
 
-    
-      
+
+/********* VIDEO **********/
+
+  iframe {
+  margin: 0 auto;
+  background-color: #777;
+  display: block;
+  border:rgba(0, 0, 0, 0.678) 4px solid;  
+  border-radius: 5px;
   }
 
-  #swoosh{
+  #video_container {
+      background: rgb(2,0,36);
+      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(148,25,14,1) 67%);
+      padding-bottom: 150px;
+      padding-top: 150px;
+  }
+
+
+  /********** TEXT ***********/
+
+  ul, li {
+      list-style: none;
+      font-size: 2rem;
+      line-height: 1;
       text-align: center;
-      margin-left: 80px;
-      
+      padding: 2rem 1rem;
+      background: #42afa800;
+      color: #f0d040;
+      display: flex;
+      flex-direction: column;
+      width: 97%;
+      margin: 0;
+      font-family: 'Arvo', sans-serif;
+      text-transform: capitalize; 
+
+
+  }
+
+  #nike_title {
+      list-style: none;
+      font-size: 3rem;
+      line-height: 1;
+      text-align: center;
+      padding-top: 0px;
+      background: #42afa800;
+      color: #f0d040;
+      display: flex;
+      flex-direction: column;
+      width: 97%;
+      margin-top: -30px;
+      font-family: 'Arvo', sans-serif;
+      text-transform: capitalize; 
+      position: absolute;
+  }
+
+  #red_two {
+      font-size: 4rem;
+      line-height: 1;
+      position: relative;
+      top: -90px;
+      left:250px;
+      text-transform: bold;
       
   }
 
 
-  button {
-      background-color: rgb(216, 213, 168);
+
+  #top_menu_item {
+      padding-top: 60px;
+  }
+
+  span {
+      margin-top:30px;
+      margin-bottom: 50px;
+      font-size: 20px;
+      color: white;
+  }
+
+  #spec_container {
+      margin-top: 0;
+      background: rgb(2,0,36);
+  }
+
+
+
+
+
+
+
+  /******** container for product range **********/
+
+  .range-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: space-around;
+      background-color: #f5f5f5;
+    }
+    .range-container:after {
+      display: block;
+      content: "";
+    }
+    .range-container img {
+      flex: 1 1 1;
+      margin-left:auto;
+      margin-right: auto;
+  }
+
+
+
+
+
+    /********* email entry and submit button**********/
+
+    #submit {
+        height: 44px;
+        width: 164px;
+        background-color:#995e59;
+        color: white;
+        
       border: none;
-      border-radius: 20px;
-      background-color: rgba(255, 255, 255, 0);
-      font-size: 24px;
+      padding: 2px;
+      text-align: center;
+      border: 2px solid black;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
 
+    #submit:hover {
+      background-color: rgb(0, 0, 0);
+      transform: scale(1.1);
+      border: white 2px solid;
+      transition-duration: 0.6s;
+    }
+
+    #email {
+      height: 40px;
+      width: 160px;
+      background-color: #f1cf3f;
+      color: white;
+      padding: 2px;
+      margin-right:10px;
+      text-align: center;
+      border-radius: 5px;
+      
   }
 
-  a {
-      text-emphasis: none;
-      text-decoration: none;
-      color: #000000;
-  }
 
-  .item {
-    font-size: 2rem;
-    line-height: 1;
-    text-align: center;
-    padding: 2rem 1rem;
-    background: #42afa800;
-    color: rgba(0, 0, 0, 0.938);
-
-    margin: 0.375rem;
-    flex-grow: 1; }
-
-    #trail_two {
-        display: flex;
-        padding-top: 50px;
-        justify-content: center;
-        background-color: #94190e;
-    }
-
-    #npt2 {
-        color: RGB(34, 17, 2);
-    }
-
-    iframe {
-    margin: 0 auto;
-    background-color: #777;
-    display: block;
-    }
-
-    #video_container {
-        background: rgb(2,0,36);
-        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(148,25,14,1) 67%);
-        padding-bottom: 150px;
-        padding-top: 150px;
-    }
-
-    ul, li {
-        list-style: none;
-        font-size: 2rem;
-        line-height: 1;
-        text-align: center;
-        padding: 2rem 1rem;
-        background: #42afa800;
-        color: #f0d040;
-        display: flex;
-        flex-direction: column;
-        width: 97%;
-        margin: 0;
-
-    }
-
-    span {
-        margin-top:30px;
-        margin-bottom: 50px;
-        font-size: 20px;
-        color: white;
-    }
-  
-    #spec_container {
-        margin-top: 0;
-        background: rgb(2,0,36);
-    }
-
-    .range-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        align-content: space-around;
-        background-color: #f5f5f5;
-      }
-      .range-container:after {
-        display: block;
-        content: "";
-      }
-      .range-container img {
-        flex: 1 1 1;
-        margin-left:auto;
-        margin-right: auto;
-    
-      }
-
-      #submit {
-          height: 44px;
-          width: 164px;
-          background-color:#995e59;
-          color: white;
-          
-        border: none;
-        padding: 2px;
-        text-align: center;
-        border: 4px solid black;
-        margin-left: 10px;
-      }
-
-      #submit:hover {
-        background-color: rgb(0, 0, 0);
-        transform: scale(1.1);
-        border: white 2px solid;
-        transition-duration: 0.6s;
-      }
-
-      #email {
-        height: 40px;
-        width: 160px;
-        background-color: #f1cf3f;
-        color: white;
-        padding: 2px;
-        margin-right:10px;
-        text-align: center;
-        
-        
+    #form_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+      background-color: #f5f5f5;
     }
 
 
-      #form_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 50px;
-        background-color: #f5f5f5;
-      }
 
-      @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+
+
+
+/********** RESPONSIVE MENU **********/
+
+
+
+.event {
+  float: right;
 }
-    
+
+#menu {
+  width: 70px;
+  height: 70px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+.bar {
+  
+  height: 10px;
+  width: 100%;
+  background-color: #000000;
+  text-shadow: 1px 1px #3a6c40;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-8px);
+}
+
+#bar3 {
+  transform: translateY(+8px);
+}
+
+.nav li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 30px;
+
+  text-align: left;
+  font-family: 'Arvo', serif;
+  
+
+}
+
+.nav li a:hover{
+  font-weight: bold;
+}
+
+.nav li{
+  list-style: none;
+  padding: 14px 0;
+  margin-left: -30px;
+}
+
+.nav{
+  padding: 0;
+  margin: 0 35px;
+  transition: 0.3s ease;
+  display: none;
+}
+
+.menu-bg, #menu-bar{
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+
+
+.menu-bg{
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background-color: #f1cf3f;
+  border-radius: 50%;
+  transition: 1s ease;
+}
+
+#menu-bar{
+  z-index: 2;
+  padding:30px 0px 0px 0px;
+  margin-left:20px;
+}
+
+
+
+
+/********** RESPONSIVE MENU ONCLICK ************/
+
+.change-bg{
+  width: 750px;
+  height: 750px;
+  transform: translate(-60%,-30%)
+}
+
+
+.change .bar{
+  background-color: #000000;
+  text-shadow: 2px 2px #210481;
+  transition: 1s;
+}
+
+.change #bar1 {
+  transform: translateX(20px) rotateZ(600deg) translateY(0px);
+  color:#210481;
+ 
+}
+
+.change #bar3 {
+  transform: translateY(-56px) rotate(-600deg) translateX(42px);
+}
+
+.change #bar2 {
+  transform: translateY(28px);
+}
+
+.change {
+  display: block;
+}
+
+.event-name {
+  font-size: 60px;
+  border-bottom: 50px;
+  margin-top: -50px;
+}
+
+
+
+/********** NIKE TRAIL FIXED LOGO ************/
+
+
+#nikelogo {
+
+position:fixed;
+top: 0;
+right: 0;
+z-index: 3;
+height:240px;
+width: 240px;
+padding: 20px;
+
+
+}
+
+/************ RETURN TO TOP BUTTON ***********/
+
+#myBtn {
+
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #2c050200;; /* Set a background color */
+  color: rgb(27, 121, 74); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+ 
+
+}
+
+#myBtn img {
+  height:80px;
+  width:80px;
+}
+
+#myBtn:hover {
+  background-color: #ffffff28; /* Add a dark-grey background on hover */
+}

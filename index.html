@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Example Nike Product Launch Site">
+        <meta name="Nike Trail 2" content="Example Launch Site">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap" rel="stylesheet">
+        <script src="/script.js"></script>
+        <title>Nike Trail 2 Launch Event</title>
     </head>
-    <body>
-        <header id="header">
-            <div class="container">
-            <h1 id="npt2" class="item item-1">Nike Pegasus Trail 2</h1>
-            <div id="swoosh"class="item item-2">
-            <img src="/images/pngfind.com-nike-png-562120.png" id="header-img" height="40px" width="120px">
-            </div>
-            <nav id="nav-bar" class="item item-3">
-                <button><a class="nav-link" href="#video">Video</a></button>
-                <button><a class="nav-link" href="#spec">Specs</a></button>
-                <button><a class="nav-link" href="#range">Nike Trail Shoes</a></button>
 
-            </nav>
+    <body>
+
+        <div id="page-container">
+            <image id="nikelogo" src="/images/nike_trail-removebg-preview.png" alt="Nike Trail Logo"></image>
+       
+            <div id="menu-bar">
+                
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                    <ul class="nav" id="nav">
+                        <li id="top_menu_item"><a href="#video">MEDIA</a></li>
+                        <li><a href="#spec">ABOUT</a></li>
+                        <li><a href="#range">RANGE</a></li>
+                    </ul>   
             </div>
-        </header>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>   
+            </div>
+    
 
         <div id="trail_two">
-            <img src="/images/Nike-Pegasus-Trail-2-Gore-Tex-DC1933-700-1.jpg">
+            <img src="/images/Nike-Pegasus-Trail-2-Gore-Tex-DC1933-700-1.jpg" alt="Picture of Nike Trainer">
+        </div>
+
+        <div id="nike_title">Nike Pegasus Trail <span id="red_two">2</span>
         </div>
         
         <div id="video_container">
-            <iframe id="video" width="672" height="378" src="https://www.youtube.com/embed/BS8PwUPDfDo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="672" height="378" title="Nike Trail Promotional Video" src="https://www.youtube.com/embed/BS8PwUPDfDo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div id="spec_container">
@@ -43,20 +64,19 @@
         </div>
 
         <div id="range" class="range-container">
-           <img class="trail_examples" src="/images/trail_example1.jpeg">
-           <img class="trail_examples" src="/images/trail_example2.jpeg">
-           <img class="trail_examples" src="/images/trail_example3.jpeg">
+           <img class="trail_examples" src="/images/trail_example1.jpeg" alt="example of trail shoe">
+           <img class="trail_examples" src="/images/trail_example2.jpeg" alt="example of trail shoe">   
+           <img class="trail_examples" src="/images/trail_example3.jpeg" alt="example of trail shoe">
         </div>
        
         <div id="form_container">
-        <h1>Enter your Email below for Nike Pegasus Trail 2 Updates</h1>    
-        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit"> 
-            <input id="email" type="email" name="email" placeholder="input email here" required>
-            <input id="submit" type="submit" value="Submit">
-        </form>
+            <h1>Enter your Email below for Nike Pegasus Trail 2 Updates</h1>    
+                <form id="form" method="post" action="#"> 
+                    <input id="email" type="email" name="email" placeholder="Input email here" required>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/images/up arrow.png " alt="arrow pointing upward"></button>   
         </div>
-
         
-       
     </body>
 </html>
